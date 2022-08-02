@@ -1,0 +1,234 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px; }
+
+.contenedor {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; }
+
+header {
+  width: 100%;
+  background: url("../img/bg.jpg") #281a0c;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0; }
+  header .contenedor {
+    position: relative;
+    height: 700px; }
+    header .contenedor .menu {
+      width: 100%;
+      text-align: right; }
+      header .contenedor .menu a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        display: inline-block;
+        margin: 40px 20px;
+        text-decoration: none;
+        position: relative; }
+        header .contenedor .menu a:hover {
+          text-decoration: underline; }
+    header .contenedor .texto {
+      width: 100%;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      margin-top: -70px; }
+      header .contenedor .texto .nombre {
+        font-size: 50px;
+        font-weight: 600; }
+        header .contenedor .texto .nombre span {
+          font-weight: 300; }
+      header .contenedor .texto h3 {
+        font-weight: 300;
+        font-size: 25px;
+        font-style: italic; }
+
+.main {
+  background: url("../img/bg-textura.png");
+  background-repeat: repeat; }
+  .main .acerca-de .contenedor {
+    overflow: visible;
+    position: relative; }
+    .main .acerca-de .contenedor .foto {
+      width: 80%;
+      position: absolute;
+      left: 0;
+      top: -50px;
+      z-index: 0;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.35); }
+      .main .acerca-de .contenedor .foto .img {
+        width: 100%;
+        vertical-align: top; }
+  .main .acerca-de article {
+    background: #fff;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    top: 500px;
+    z-index: 1;
+    float: right;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.35); }
+    .main .acerca-de article h3 {
+      font-size: 50px;
+      font-weight: 150;
+      margin-bottom: 15px; }
+    .main .acerca-de article p {
+      line-height: 28px;
+      margin-bottom: 15px; }
+  .main .menu {
+    padding-top: 300px;
+    margin-bottom: 50px; }
+    .main .menu .titulo {
+      font-size: 40px;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 40px; }
+    .main .menu .contenedor-menu2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+    .main .menu .contenedor-menu,
+    .main .menu .contenedor-menu2 {
+      border: 1px solid #000;
+      background: transparent;
+      padding: 10px;
+      overflow: hidden; }
+    .main .menu article {
+      width: 50%;
+      padding: 20px; }
+    .main .menu .categoria {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      text-align: center; }
+    .main .menu .platillo {
+      margin-bottom: 20px;
+      padding-bottom: 30px;
+      border-bottom: 4px dotted #000;
+      overflow: hidden; }
+    .main .menu .nombre {
+      font-size: 20px;
+      margin-bottom: 15px;
+      float: left; }
+    .main .menu .precio {
+      font-size: 20px;
+      margin-bottom: 15px;
+      float: right; }
+    .main .menu .descripcion {
+      font-size: 16px;
+      color: #676767;
+      clear: both; }
+  .main .galeria {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .main .galeria .foto {
+      width: 25%; }
+      .main .galeria .foto img {
+        width: 100%;
+        vertical-align: top;
+        opacity: .5; }
+        .main .galeria .foto img:hover {
+          opacity: 1;
+          transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease; }
+  .main .ubicacion {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px; }
+    .main .ubicacion .titulo {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 5px; }
+    .main .ubicacion p {
+      margin: 0;
+      padding: 0; }
+    .main .ubicacion .horarios {
+      margin-top: 52px; }
+      .main .ubicacion .horarios .titulo {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center; }
+      .main .ubicacion .horarios .entre-semana {
+        float: left; }
+      .main .ubicacion .horarios .fin-semana {
+        float: right;
+        margin-left: 20px; }
+  .main .mapa {
+    width: 100%;
+    overflow: hidden; }
+    .main .mapa iframe {
+      width: 100%;
+      max-height: 600px; }
+
+footer {
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  border-radius: 5px 5px 0 0; }
+  footer .copy {
+    text-align: center;
+    padding: 10px 0;
+    color: #fff; }
+
+@media screen and (max-width: 800px) {
+  header .contenedor {
+    height: 400px; }
+    header .contenedor .menu {
+      text-align: center; }
+      header .contenedor .menu a {
+        margin: 10px 20px; }
+  header .texto {
+    height: auto;
+    padding: 0 0 0 90px; }
+    header .texto .nombre {
+      font-size: 30px; }
+    header .texto h3 {
+      font-size: 18px; }
+
+  .main .acerca-de .contenedor {
+    overflow: hidden; }
+    .main .acerca-de .contenedor .foto {
+      width: 80%;
+      position: relative; }
+    .main .acerca-de .contenedor article {
+      position: relative;
+      width: 100%;
+      top: -50px;
+      transform: translate(0px, 0); }
+  .main .menu {
+    padding-top: 0px; }
+    .main .menu .contenedor-menu2 {
+      flex-direction: column; }
+      .main .menu .contenedor-menu2 article {
+        width: 80%;
+        padding: 20px;
+        margin: 0 auto; }
+  .main .galeria .foto {
+    width: 50%; }
+  .main .ubicacion {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+  .main .mapa {
+    margin: 0 auto; }
+    .main .mapa iframe {
+      width: 90%;
+      padding: 0 0 0 90px;
+      max-height: 600px; } }
+
+/*# sourceMappingURL=estilo.css.map */

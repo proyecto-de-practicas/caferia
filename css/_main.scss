@@ -1,0 +1,169 @@
+.main
+{
+    background: url('../img/bg-textura.png');
+    background-repeat: repeat;// repita la textura
+    .acerca-de {
+        .contenedor{
+           overflow: visible;
+            position: relative;
+            .foto{
+                width: 80%;
+                position: absolute;
+                left: 0;
+                top: -50px;
+                z-index: 0; //posicionamiento de elementos uno debajo del otro
+                box-shadow: 0 0 15px rgba(0,0,0,.35);
+                .img{
+                    width: 100%;
+                    vertical-align: top;
+                    
+                }
+            }
+        }
+        
+        article{
+            background: #fff;
+            padding: 40px;
+            width: 50%;
+            position: relative;
+            //top: 500px;
+            top: 500px;
+            z-index: 1;
+            float: right;
+            box-shadow: 0 0 15px rgba(0,0,0,.35);
+            
+            h3{
+                font-size: 50px ;
+                font-weight: 150;
+                margin-bottom: 15px;
+            }
+            p{
+                line-height: 28px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+
+    .menu{
+        padding-top: 300px;
+        margin-bottom: 50px;
+        .titulo{
+            font-size: 40px;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .contenedor-menu2{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .contenedor-menu,
+        .contenedor-menu2{
+            border: 1px solid #000;
+            background: transparent;
+            padding: 10px;
+            overflow: hidden;
+        }
+        article{
+            width: 50%;
+            //float: left;
+            padding: 20px;
+           
+        }
+        .categoria{
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .platillo{
+           margin-bottom: 20px;
+           padding-bottom: 30px;
+           border-bottom: 4px dotted #000;
+           overflow: hidden; 
+        }
+        .nombre{
+            font-size: 20px;
+            margin-bottom: 15px;
+            float: left;
+        }
+        .precio{
+            font-size: 20px;
+            margin-bottom: 15px;
+            float: right;
+        }
+        .descripcion{
+            font-size: 16px;
+            color: #676767;
+            clear: both;
+        }
+
+    }
+
+    .galeria{
+        overflow: hidden;
+        display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        .foto{
+            width: 25%;
+            
+            img{
+                width: 100%;
+                vertical-align: top;
+                opacity: .5;
+                &:hover{
+                    opacity: 1;
+                    transition: all .3s ease ;
+                    -webkit-transition: all .3s ease ;
+                    
+                }
+            }
+        }
+    }
+   
+    .ubicacion{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        .titulo{
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        .horarios{
+            margin-top: 52px;
+            .titulo{
+                font-weight: 600;
+                font-size: 20px;
+                text-align: center;
+            }
+            .entre-semana{
+                float: left;
+            }
+
+            .fin-semana{
+                float: right; 
+                margin-left: 20px;
+            }
+
+        }
+    }
+    .mapa{
+        width: 100%;
+        overflow: hidden;
+        iframe{
+            width: 100%;
+            max-height: 600px;
+        }
+    }
+}
+
